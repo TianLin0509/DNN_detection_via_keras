@@ -33,14 +33,14 @@ model.compile(optimizer='adam', loss='mse', metrics=[bit_err])
 model.summary()
 checkpoint = callbacks.ModelCheckpoint('./temp_trained_25.h5', monitor='val_bit_err',
                                        verbose=0, save_best_only=True, mode='min', save_weights_only=True)
-# model.fit_generator(
-#     training_gen(1000,25),
-#     steps_per_epoch=50,
-#     epochs=10000,
-#     validation_data=validation_gen(1000, 25),
-#     validation_steps=1,
-#     callbacks=[checkpoint],
-#     verbose=2)
+model.fit_generator(
+    training_gen(1000,25),
+    steps_per_epoch=50,
+    epochs=10000,
+    validation_data=validation_gen(1000, 25),
+    validation_steps=1,
+    callbacks=[checkpoint],
+    verbose=2)
 
 model.load_weights('./temp_trained_25.h5')
 BER = []

@@ -3,7 +3,7 @@ import os
 import numpy as np
 K = 64
 CP = K // 4
-P = 8
+P = 64
 allCarriers = np.arange(K)  # indices of all subcarriers ([0, 1, ... K-1])
 
 if P < K:
