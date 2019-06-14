@@ -18,3 +18,11 @@ Then, directly move the channel_train.npy and channel_test.npy to current file. 
 
 # How to use
 After downloaded and moved the data sets, just run main.py directly.
+
+# Some evaluation
+Since this repo is just a reproduction, so I follow the original idea of the author: generate random init bits, simulate the channel by loading data from the .npy file, and then build the neuron network to recover bits from the received bits. 
+
+** I know some readers want to directly apply the detection neuron network to replace their traditional receiver, for comparisons and so on. It is much easy to do with this codes. In brief, the codes for generated data is not needed. You can just save your original bits and receive signal of your own system as a .mat file (if you use Matlab) or .npy file. Then, load the data by Python and use the .fit function, where original_bits is the label and receiver signal is exactly the input of the network. You even do not need to simulate the channel (as you do it in your previous work and only receive signal is required).**
+
+Sorry for my English. If you have any problem, please contact me via my email. 
+Hopefully it is helpful for you and if possible, star or fork this repo to support. 
