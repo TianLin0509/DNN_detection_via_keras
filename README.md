@@ -1,6 +1,11 @@
 # DNN_detection_via_keras
 The implementation of **Power of Deep Learning for Channel Estimation and Signal Detection** in OFDM Systems using keras. I tried my best to simplify the codes, so that everyone can follow it easily. The original tensorflow version codes can be referred to [here](https://github.com/haoyye/OFDM_DNN).
 
+# First
+Some common problems are answered in the issue，hopefully it can help you. Besides, if this work helps you, please kindly star or fork the repo to support me. 
+
+中国学生可以直接邮件中文讨论，非常欢迎。
+
 # Requirement
 tensorflow-gpu >= 1.12.0
 
