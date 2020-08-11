@@ -4,10 +4,10 @@ This is the simplest implementation of **Power of Deep Learning for Channel Esti
 # First
 Some common problems are answered in the issue，hopefully it can help you. Besides, if this work helps you, please kindly star or fork the repo to support me. 
 
-中国学生可以直接邮件中文讨论，非常欢迎。
 
 # Requirement
 tensorflow-gpu >= 1.12.0
+As the codes are written before the publication of tensorflow 2.0. 
 
 # data sets
 I have uploaded the required data sets in [BaiduYun Drive](https://pan.baidu.com/s/16_hVoPErs4dV3LXtwPU-4w)
